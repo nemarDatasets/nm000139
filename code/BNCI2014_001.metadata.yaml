@@ -1,0 +1,194 @@
+_dataset:
+  class: BNCI2014_001
+  code: BNCI2014-001
+  doi: 10.3389/fnins.2012.00055
+  interval:
+  - 2
+  - 6
+  n_subjects: 9
+  paradigm: imagery
+acquisition:
+  cap_manufacturer: EASYCAP GmbH
+  channel_types:
+    eeg: 22
+    eog: 3
+  filters: bandpass 0.05-200 Hz
+  ground: unknown
+  hardware: BrainAmp MR plus
+  line_freq: 50.0
+  montage: custom
+  n_channels: 25
+  reference: left mastoid
+  sampling_rate: 250.0
+  sensor_type: Ag/AgCl
+  sensors:
+  - C1
+  - C2
+  - C3
+  - C4
+  - C5
+  - C6
+  - CP1
+  - CP2
+  - CP3
+  - CP4
+  - CPz
+  - Cz
+  - EOG1
+  - EOG2
+  - EOG3
+  - FC1
+  - FC2
+  - FC3
+  - FC4
+  - FCz
+  - Fz
+  - P1
+  - P2
+  - POz
+  - Pz
+  software: BCI2000
+bci_application:
+  applications:
+  - cursor_control
+  - communication
+  environment: laboratory
+cross_validation:
+  cv_method: train-test split
+  evaluation_type:
+  - within_session
+data_processed: true
+data_structure:
+  n_blocks: 6
+  n_trials:
+    test: 240
+    training: 200
+  trials_context: per subject (2 training runs + 4 test runs)
+documentation:
+  contact_info:
+  - michael.tangermann@tu-berlin.de
+  country: AT
+  data_url: http://www.bbci.de/competition/iv/
+  description: 'Review of the BCI competition IV - Data set 1: Asynchronous Motor Imagery'
+  doi: 10.3389/fnins.2012.00055
+  institution: Berlin Institute of Technology
+  institution_address: FR 6-9, Franklinstr. 28/29, 10587 Berlin, Germany
+  institution_department: Machine Learning Laboratory
+  investigators:
+  - Michael Tangermann
+  - Klaus-Robert Müller
+  - Ad Aertsen
+  - Niels Birbaumer
+  - Christoph Braun
+  - Clemens Brunner
+  - Robert Leeb
+  - Carsten Mehring
+  - Kai J. Miller
+  - Gernot R. Müller-Putz
+  - Guido Nolte
+  - Gert Pfurtscheller
+  - Hubert Preissl
+  - Gerwin Schalk
+  - Alois Schlögl
+  - Carmen Vidaurre
+  - Stephan Waldert
+  - Benjamin Blankertz
+  keywords:
+  - brain-computer interface
+  - BCI
+  - competition
+  license: CC-BY-ND-4.0
+  publication_year: 2012
+  repository: BNCI Horizon
+  senior_author: Michael Tangermann
+experiment:
+  class_labels:
+  - left_hand
+  - right_hand
+  - feet
+  - tongue
+  events:
+    foot: 3
+    left_hand: 1
+    no_control: 0
+    right_hand: 2
+  feedback_type: none
+  hed_tags:
+    feet: (Sensory-event, Experimental-stimulus, Visual-presentation, (Downward, Arrow)), (Agent-action, (Imagine, Move, Foot))
+    left_hand: (Sensory-event, Experimental-stimulus, Visual-presentation, (Leftward, Arrow)), (Agent-action, (Imagine, Move,
+      (Left, Hand)))
+    right_hand: (Sensory-event, Experimental-stimulus, Visual-presentation, (Rightward, Arrow)), (Agent-action, (Imagine,
+      Move, (Right, Hand)))
+    tongue: (Sensory-event, Experimental-stimulus, Visual-presentation, (Upward, Arrow)), (Agent-action, (Imagine, Move, Tongue))
+  instructions: Subjects instructed to perform motor imagery during cued periods
+  mode: offline
+  n_classes: 4
+  paradigm: imagery
+  primary_modality: multisensory
+  stimulus_modalities:
+  - visual
+  - auditory
+  stimulus_type: arrow_cue
+  study_design: Two-class motor imagery (selected from left hand, right hand, and foot) with asynchronous/continuous control
+    periods
+  synchronicity: asynchronous
+  trial_duration: 4.0
+file_format: GDF
+paradigm_specific:
+  cue_duration_s: 4.0
+  detected_paradigm: motor_imagery
+  imagery_duration_s: 4.0
+  imagery_tasks:
+  - left_hand
+  - right_hand
+  - foot
+participants:
+  health_status: healthy
+  n_subjects: 9
+  species: human
+performance:
+  MSE: 0.382
+preprocessing:
+  bandpass:
+    high_cutoff_hz: 200.0
+    low_cutoff_hz: 0.05
+  data_state: minimally preprocessed (bandpass and notch filtered)
+  downsampled_to_hz: 100.0
+  filter_type: analog
+  highpass_hz: 0.05
+  lowpass_hz: 200
+  notes: 'Data provided in two versions: original at 1000 Hz and downsampled to 100 Hz (with Chebyshev Type II filter order
+    10, stop band ripple 50 dB, stop band edge 49 Hz)'
+  preprocessing_applied: true
+  preprocessing_steps:
+  - bandpass filtering
+  re_reference: none
+runs_per_session: 6
+sessions_per_subject: 2
+signal_processing:
+  classifiers:
+  - LDA
+  - SVM
+  - Neural Network
+  - Naive Bayes
+  - RBF Neural Network
+  feature_extraction:
+  - CSP
+  - FBCSP
+  - Bandpower
+  - ERD
+  - ERS
+  frequency_bands:
+    beta:
+    - 16
+    - 24
+    mu:
+    - 8
+    - 12
+tags:
+  modality:
+  - Motor
+  pathology:
+  - Healthy
+  type:
+  - Motor
