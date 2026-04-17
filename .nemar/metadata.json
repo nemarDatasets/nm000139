@@ -1,0 +1,123 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "enriched",
+  "authors": {
+    "Michael Tangermann": {},
+    "Klaus-Robert Müller": {},
+    "Ad Aertsen": {},
+    "Niels Birbaumer": {},
+    "Christoph Braun": {},
+    "Clemens Brunner": {
+      "orcid": "0000-0002-6030-2233"
+    },
+    "Robert Leeb": {},
+    "Carsten Mehring": {},
+    "Kai J. Miller": {},
+    "Gernot R. Müller-Putz": {},
+    "Guido Nolte": {},
+    "Gert Pfurtscheller": {},
+    "Hubert Preissl": {},
+    "Gerwin Schalk": {},
+    "Alois Schlögl": {},
+    "Carmen Vidaurre": {},
+    "Stephan Waldert": {},
+    "Benjamin Blankertz": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.3389/fnins.2012.00055",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000139",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000139",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    }
+  ],
+  "title": "BNCI 2014-001 Motor Imagery dataset",
+  "license": "CC-BY-ND-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "704.5 MB (111 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".html",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "The BNCI 2014-001 Motor Imagery dataset is a widely-used benchmark for brain-computer interface research, comprising EEG recordings from 9 healthy subjects performing four-class motor imagery tasks (left hand, right hand, feet, and tongue). Each subject completed two sessions with 6 runs per session, yielding 200 training and 240 test trials. The dataset features 22 EEG channels with two versions: original at 1000 Hz and downsampled to 100 Hz (using Chebyshev Type II filtering). Minimal preprocessing includes bandpass filtering (0.05-200 Hz) and 50 Hz notch filtering, making it a standard resource for evaluating multi-class motor imagery classification algorithms and cross-session transfer learning approaches.",
+  "methods_description": "EEG data were acquired using a BrainAmp MR plus amplifier with 22 EEG channels and 3 EOG channels sampled at 1000 Hz. Subjects performed cued motor imagery tasks lasting 4 seconds each, with visual and auditory stimulus presentation. Online filtering included bandpass 0.05-200 Hz and 50 Hz notch filtering. Data were recorded using BCI2000 software with a left mastoid reference and Ag/AgCl electrodes from an EASYCAP GmbH cap. Preprocessing included bandpass filtering (0.05-200 Hz) and notch filtering at 50 Hz. Data are provided in two versions: original at 1000 Hz and downsampled to 100 Hz using a Chebyshev Type II filter (order 10, stop band ripple 50 dB, stop band edge 49 Hz).",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "BCI"
+    },
+    {
+      "term": "classification"
+    },
+    {
+      "term": "benchmark dataset"
+    },
+    {
+      "term": "asynchronous control"
+    },
+    {
+      "term": "transfer learning"
+    },
+    {
+      "term": "four-class"
+    },
+    {
+      "term": "competition dataset"
+    },
+    {
+      "term": "BCI Competition IV"
+    },
+    {
+      "term": "multi-class motor imagery"
+    },
+    {
+      "term": "motor imagery classification"
+    },
+    {
+      "term": "cross-session transfer learning"
+    },
+    {
+      "term": "asynchronous BCI"
+    }
+  ],
+  "source_hash": "8a178c50b7ad52bddff9f8b9869c7f4dfed96e4839729aab5cef72a8f52d3dfb"
+}
