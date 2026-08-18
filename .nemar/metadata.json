@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "BNCI 2014-001 Motor Imagery dataset",
-  "description": "The BNCI 2014-001 Motor Imagery dataset is a widely-used benchmark for brain-computer interface research, comprising EEG recordings from 9 healthy subjects performing four-class motor imagery tasks (left hand, right hand, feet, and tongue). Each subject completed two sessions with 6 runs per session, yielding 200 training and 240 test trials. The dataset features 22 EEG channels and 3 EOG channels sampled at 250 Hz. Data are provided in two versions: original at 250 Hz and downsampled to 100 Hz using Chebyshev Type II filtering (order 10, stop band ripple 50 dB, stop band edge 49 Hz). Preprocessing includes bandpass filtering (0.05-200 Hz) and 50 Hz notch filtering, making it a standard resource for evaluating multi-class motor imagery classification algorithms and cross-session transfer learning approaches.",
-  "methods_description": "EEG data were acquired using a BrainAmp MR plus amplifier with 22 EEG channels and 3 EOG channels arranged in a custom montage (sampling rate: 250 Hz). Subjects performed cued motor imagery tasks lasting 4 seconds each, with visual and auditory arrow cues indicating the imagery class. Online filtering included bandpass 0.05-200 Hz and 50 Hz notch filtering. Data were recorded using BCI2000 software with left mastoid reference and Ag/AgCl electrodes from EASYCAP GmbH. Preprocessing included bandpass filtering and optional downsampling to 100 Hz using Chebyshev Type II filtering.",
+  "description": "The BNCI 2014-001 Motor Imagery dataset is a widely-used benchmark for brain-computer interface research, comprising EEG recordings from 9 healthy subjects performing four-class motor imagery tasks (left hand, right hand, feet, and tongue). Each subject completed two sessions with 6 runs per session, yielding 200 training and 240 test trials. The dataset features 22 EEG channels plus 3 EOG channels (25 total) sampled at 250 Hz with minimal preprocessing (bandpass filtering 0.05-200 Hz and 50 Hz notch filtering). Data are provided in two versions: original at 250 Hz and downsampled to 100 Hz using Chebyshev Type II filtering. This makes it a standard resource for evaluating multi-class motor imagery classification algorithms and cross-session transfer learning approaches.",
+  "methods_description": "EEG data were acquired using a BrainAmp MR plus amplifier with 22 EEG channels and 3 EOG channels at 250 Hz sampling rate. Subjects performed cued motor imagery tasks lasting 4 seconds each, with visual arrow cues indicating the imagery class. Online filtering included bandpass 0.05-200 Hz and 50 Hz notch filtering. Data were recorded using BCI2000 software with reference at left mastoid. Two data versions are provided: original at 250 Hz and downsampled to 100 Hz using Chebyshev Type II filtering (filter order 10, stop band ripple 50 dB, stop band edge 49 Hz).",
   "license": "CC-BY-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -30,16 +30,7 @@
   },
   "keywords": [
     {
-      "term": "brain-computer interface"
-    },
-    {
-      "term": "BCI"
-    },
-    {
       "term": "motor imagery"
-    },
-    {
-      "term": "motor imagery classification"
     },
     {
       "term": "Brain-Computer Interfaces",
@@ -50,25 +41,27 @@
       "term": "EEG"
     },
     {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
       "term": "classification"
     },
     {
       "term": "benchmark dataset"
     },
     {
-      "term": "multi-class paradigm"
+      "term": "multi-class motor imagery"
     },
     {
-      "term": "asynchronous control"
-    },
-    {
-      "term": "competition"
+      "term": "BCI Competition IV"
     },
     {
       "term": "transfer learning"
     },
     {
-      "term": "cross-session variability"
+      "term": "cued motor imagery"
     }
   ],
   "related_identifiers": [
@@ -116,5 +109,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "bd55433ea27a0bd9e10d0a4f3dcb93ce5e9ccf9e74b80c0857787bd37fce46a5"
+  "source_hash": "b7623f119ff818fd2933d86dc7ed769134b260b260500ef8eefce2247aee7211"
 }
