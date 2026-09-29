@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "BNCI 2014-001 Motor Imagery dataset",
-  "description": "The BNCI 2014-001 Motor Imagery dataset is a widely-used benchmark for brain-computer interface research, comprising EEG recordings from 9 healthy subjects performing four-class motor imagery tasks (left hand, right hand, feet, and tongue). Each subject completed two sessions with 6 runs per session, yielding 200 training and 240 test trials. The dataset features 22 EEG channels plus 3 EOG channels (25 total) sampled at 250 Hz with minimal preprocessing (bandpass filtering 0.05-200 Hz and 50 Hz notch filtering). Data are provided in two versions: original at 250 Hz and downsampled to 100 Hz using Chebyshev Type II filtering. This makes it a standard resource for evaluating multi-class motor imagery classification algorithms and cross-session transfer learning approaches.",
-  "methods_description": "EEG data were acquired using a BrainAmp MR plus amplifier with 22 EEG channels and 3 EOG channels at 250 Hz sampling rate. Subjects performed cued motor imagery tasks lasting 4 seconds each, with visual arrow cues indicating the imagery class. Online filtering included bandpass 0.05-200 Hz and 50 Hz notch filtering. Data were recorded using BCI2000 software with reference at left mastoid. Two data versions are provided: original at 250 Hz and downsampled to 100 Hz using Chebyshev Type II filtering (filter order 10, stop band ripple 50 dB, stop band edge 49 Hz).",
+  "description": "This dataset contains EEG recordings from nine healthy participants performing cued motor imagery of the left hand, right hand, feet, and tongue. It corresponds to BCI Competition IV Dataset 2a, a widely used benchmark for four-class motor imagery classification. Each participant completed two sessions of six runs, recorded with 22 EEG and 3 EOG channels at 250 Hz. The data are distributed in a BIDS-formatted derivative produced with MOABB.",
+  "methods_description": "EEG was recorded with a BrainAmp MR plus amplifier and an EASYCAP cap using Ag/AgCl electrodes (22 EEG and 3 EOG channels, left mastoid reference) at 250 Hz, with an online bandpass of 0.05-200 Hz. Each session had 6 runs. Participants performed cued motor imagery of left hand, right hand, feet, or tongue after arrow cues, without feedback. Each subject had 200 training trials and 240 test trials.",
   "license": "CC-BY-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -30,7 +30,16 @@
   },
   "keywords": [
     {
+      "term": "EEG"
+    },
+    {
       "term": "motor imagery"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "BCI competition"
     },
     {
       "term": "Brain-Computer Interfaces",
@@ -38,30 +47,9 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "EEG"
-    },
-    {
-      "term": "Electroencephalography",
+      "term": "Imagination",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "classification"
-    },
-    {
-      "term": "benchmark dataset"
-    },
-    {
-      "term": "multi-class motor imagery"
-    },
-    {
-      "term": "BCI Competition IV"
-    },
-    {
-      "term": "transfer learning"
-    },
-    {
-      "term": "cued motor imagery"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D007092"
     }
   ],
   "related_identifiers": [
@@ -97,7 +85,7 @@
     "eeg"
   ],
   "sizes": [
-    "1.5 GB (129 files)"
+    "1.38 GB (129 files)"
   ],
   "formats": [
     ".bdf",
