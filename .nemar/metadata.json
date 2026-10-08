@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2014-001 Motor Imagery dataset",
-  "description": "This dataset contains EEG recordings from nine healthy participants performing cued motor imagery of the left hand, right hand, feet, and tongue. It corresponds to BCI Competition IV Dataset 2a, a widely used benchmark for four-class motor imagery classification. Each participant completed two sessions of six runs, recorded with 22 EEG and 3 EOG channels at 250 Hz. The data are distributed in a BIDS-formatted derivative produced with MOABB.",
-  "methods_description": "EEG was recorded with a BrainAmp MR plus amplifier and an EASYCAP cap using Ag/AgCl electrodes (22 EEG and 3 EOG channels, left mastoid reference) at 250 Hz, with an online bandpass of 0.05-200 Hz. Each session had 6 runs. Participants performed cued motor imagery of left hand, right hand, feet, or tongue after arrow cues, without feedback. Each subject had 200 training trials and 240 test trials.",
+  "description": "This dataset contains EEG recordings from 9 healthy participants performing cued motor imagery of the left hand, right hand, feet, and tongue. It corresponds to BCI Competition IV Dataset 2a, a widely used benchmark for 4-class motor imagery classification. Each participant completed two sessions of six runs, with 22 EEG and 3 EOG channels sampled at 250 Hz. The recordings are provided in a BIDS-formatted derivative with HED event annotations.",
+  "methods_description": "EEG was recorded with a BrainAmp MR plus amplifier and Ag/AgCl electrodes (EASYCAP cap) at 250 Hz, with 22 EEG and 3 EOG channels referenced to the left mastoid and bandpass filtered at 0.05-200 Hz. Each session had 6 runs. Participants performed 4-second cued motor imagery of the left hand, right hand, feet, or tongue, prompted by arrow cues. Each subject had a training session (2 runs, 200 trials) and a test session (4 runs, 240 trials).",
   "license": "CC-BY-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -36,20 +36,16 @@
       "term": "motor imagery"
     },
     {
-      "term": "brain-computer interface"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
       "term": "BCI competition"
     },
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "Imagination",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D007092"
+      "term": "benchmark"
     }
   ],
   "related_identifiers": [
@@ -97,5 +93,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "b7623f119ff818fd2933d86dc7ed769134b260b260500ef8eefce2247aee7211"
+  "source_hash": "4c6778437d86b96548fc30d63c42359d8ca4fa64fd5343403b56b938f876fe44"
 }
